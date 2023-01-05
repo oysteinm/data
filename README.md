@@ -1,6 +1,6 @@
 # data
 
-This repository contains csv data, downloadable in `R` or any preferable language.  
+This repository contains csv data, downloadable in any preferable language.  
 More info on each data set in it's respective `.R` file.
 
 The data files are:
@@ -18,23 +18,23 @@ Read the csv data from github:
 
 ### R
 
-  library(tidyverse)
-  url <- 'https://raw.githubusercontent.com/oysteinm/data/main/oil.csv'
-  oil <- read_csv(url)
-  oil %>% 
-  head(10)
+  library(tidyverse)  
+  url <- 'https://raw.githubusercontent.com/oysteinm/data/main/oil.csv'  
+  oil <- read_csv(url)  
+  oil %>%   
+  head(10)  
 
 
 ### Python
 
-import pandas as pd
-oil = pd.read_csv('https://raw.githubusercontent.com/oysteinm/data/main/oil.csv')
-oil.head(10)
+  import pandas as pd  
+  oil = pd.read_csv('https://raw.githubusercontent.com/oysteinm/data/main/oil.csv')  
+  oil.head(10)  
 
 ### Julia
 
-  using CSV, Downloads
-  url = "https://raw.githubusercontent.com/oysteinm/data/main/oil.csv"
-  http_response = Downloads.download(url)
-  oil = CSV.File(http_response)
-  first(oil, 10)
+  using CSV, Downloads  
+  url = "https://raw.githubusercontent.com/oysteinm/data/main/oil.csv"  
+  http_response = Downloads.download(url)  
+  oil = CSV.File(http_response)  
+  first(oil, 10)  
