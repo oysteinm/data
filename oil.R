@@ -1,7 +1,7 @@
 library(tidyverse)
 
 # Data on Norwegian oil and gas production
-# Source: Oljedirektoratet
+# source: Oljedirektoratet
 # web-page: npd.no
 # search-term: resource report
 # excel file name: ressursrapport-resource-report-bakgrunnstall-numbers.xlsx
@@ -9,8 +9,9 @@ library(tidyverse)
 # downloaded: 05/01/2023
 
 # Historical production of liquids and gas			
-# units: million scm^3 oe (million standard cubic meter of oil equivalents)		
+# units: million scm^3 oe (standard cubic meter of oil equivalents)		
 # conversion factor: 1 scm^3 = 6.2898 barrel (bbl) or stock tank barrel (stb)
+# ngl is natural-gas liquids, also called (natural-gas) condensate
 
 oil <- tibble::tribble(
   ~year, ~oil,   ~gas, ~ngl_and_condensate,
@@ -67,4 +68,3 @@ oil <- tibble::tribble(
 
 getwd()
 write_csv(oil, "oil.csv")
-
