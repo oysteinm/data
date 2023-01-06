@@ -35,5 +35,5 @@ Read the csv data from github:
 
   using CSV, DataFrames  
   url = "https://raw.githubusercontent.com/oysteinm/data/main/oil.csv"  
-  oil = DataFrames.DataFrame(CSV.File(DataFrames.download(url)))
+  oil = DataFrame(CSV.File(download(url)))  
   first(oil, 10)  
