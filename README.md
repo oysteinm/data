@@ -5,6 +5,10 @@ More info on each data set in it's respective `.R` file.
 
 ## The data files are:
 
+# `cash_flow.csv`
+
+Realised net government cash flow from petroleum activities, 1971-2021. Paid taxes are adjusted for repayments, and the numbers are in constant 2022-prices. Billion NOK (2022).
+
 # `gdp.csv`
 
 GDP per capita, 1970-2018 (purchasing power corrected, USA = 100)
@@ -119,3 +123,7 @@ Read the csv data from github:
   url = "https://raw.githubusercontent.com/oysteinm/data/main/oil_price.csv"  
   oil_price = DataFrame(CSV.File(download(url)))  
   first(oil_price, 10)  
+
+
+
+The net government cash flow from petroleum activities, 1971-2021												
