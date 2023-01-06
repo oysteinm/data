@@ -5,7 +5,7 @@ More info on each data set in it's respective `.R` file.
 
 ## The data files are:
 
-`gdp.csv`
+# `gdp.csv`
 
 GDP per capita, 1970-2018 (purchasing power corrected, USA = 100)
 
@@ -17,7 +17,6 @@ Read the csv data from github:
   url <- "https://raw.githubusercontent.com/oysteinm/data/main/gdp.csv"  
   gdp <- read_csv(url)  
   head(gdp, 10)  
-
 
 ### Python
 
@@ -33,8 +32,7 @@ Read the csv data from github:
   gdp = DataFrame(CSV.File(download(url)))  
   first(gdp, 10)  
 
-
-`oil.csv`
+# `oil.csv`
 
 Data on Norwegian oil and gas production.
 
@@ -51,7 +49,6 @@ Read the csv data from github:
   url <- "https://raw.githubusercontent.com/oysteinm/data/main/oil.csv"  
   oil <- read_csv(url)  
   head(oil, 10)  
-
 
 ### Python
 

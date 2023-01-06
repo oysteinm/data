@@ -1,14 +1,14 @@
 library(tidyverse)
 
-# GDP per capita, 1970-2018. 
-# source: Oljedirektoratet, source: Norges Bank, OECD and Statistics Norway.
-# web-page: npd.no
-# search-term: resource report
-# excel file name: ressursrapport-resource-report-bakgrunnstall-numbers.xlsx
-# sheet name: Fig. 2.2
-# downloaded: 05/01/2023
+#' GDP per capita, 1970-2018. 
+#' source: Oljedirektoratet, source: Norges Bank, OECD and Statistics Norway.
+#' web-page: npd.no
+#' search-term: resource report
+#' excel file name: ressursrapport-resource-report-bakgrunnstall-numbers.xlsx
+#' sheet name: Fig. 2.2
+#' downloaded: 05/01/2023
 
-# GDP per capita, 1970-2018 (purchasing power corrected, USA = 100)
+#' GDP per capita, 1970-2018 (purchasing power corrected, USA = 100)
 
 gdp <- tibble::tribble(
     ~year, ~mainland_norway, ~germany, ~new_zealand, ~norway, ~switzerland, ~sweden, ~usa,
@@ -64,4 +64,4 @@ gdp <- tibble::tribble(
     )
   
 getwd()
-write_csv(bnp, "gdp.csv")
+write_csv(gdp, "gdp.csv")
