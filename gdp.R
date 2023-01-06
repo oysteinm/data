@@ -1,7 +1,7 @@
 library(tidyverse)
 
 #' GDP per capita, 1970-2018. 
-#' source: Oljedirektoratet, source: Norges Bank, OECD and Statistics Norway.
+#' source: Oljedirektoratet / Norwegian Petroleum Directorate, source: Norges Bank, OECD and Statistics Norway.
 #' web-page: npd.no
 #' search-term: resource report
 #' excel file name: ressursrapport-resource-report-bakgrunnstall-numbers.xlsx

@@ -1,7 +1,7 @@
 library(tidyverse)
 
 #' Data on Norwegian oil and gas production
-#' source: Oljedirektoratet
+#' source: Oljedirektoratet / Norwegian Petroleum Directorate
 #' web-page: npd.no
 #' search-term: resource report
 #' excel file name: ressursrapport-resource-report-bakgrunnstall-numbers.xlsx

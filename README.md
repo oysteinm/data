@@ -90,3 +90,32 @@ Read the csv data from github:
   url = "https://raw.githubusercontent.com/oysteinm/data/main/oil.csv"  
   oil = DataFrame(CSV.File(download(url)))  
   first(oil, 10)  
+
+# `oil_price.csv`
+
+Historical development in oil prices and exploration wells.  
+Number of exploration wells (spudded).  
+USD/bbl (previous year).
+
+Read the csv data from github:
+
+### R
+
+  library(tidyverse)  
+  url <- "https://raw.githubusercontent.com/oysteinm/data/main/oil_price.csv"  
+  oil_price <- read_csv(url)  
+  head(oil_price, 10)  
+
+### Python
+
+  import pandas as pd  
+  url = "https://raw.githubusercontent.com/oysteinm/data/main/oil_price.csv"  
+  oil_price = pd.read_csv(url)  
+  oil_price.head(10)  
+
+### Julia
+
+  using CSV, DataFrames  
+  url = "https://raw.githubusercontent.com/oysteinm/data/main/oil_price.csv"  
+  oil_price = DataFrame(CSV.File(download(url)))  
+  first(oil_price, 10)  

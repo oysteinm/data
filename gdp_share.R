@@ -1,7 +1,7 @@
 library(tidyverse)
 
 #' Macroeconomic indicators for the oil industry, 1971-2020. 
-#' source: norskpetroleum.no.
+#' source: Oljedirektoratet / Norwegian Petroleum Directorate and norskpetroleum.no.
 #' web-page: npd.no
 #' search-term: resource report
 #' excel file name: ressursrapport-resource-report-bakgrunnstall-numbers.xlsx
