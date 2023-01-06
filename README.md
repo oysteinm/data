@@ -3,7 +3,36 @@
 This repository contains csv data, downloadable in any preferable language.  
 More info on each data set in it's respective `.R` file.
 
-The data files are:
+## The data files are:
+
+`gdp.csv`
+
+GDP per capita, 1970-2018 (purchasing power corrected, USA = 100)
+
+Read the csv data from github:
+
+### R
+
+  library(tidyverse)  
+  url <- "https://raw.githubusercontent.com/oysteinm/data/main/gdp.csv"  
+  gdp <- read_csv(url)  
+  head(gdp, 10)  
+
+
+### Python
+
+  import pandas as pd  
+  url = "https://raw.githubusercontent.com/oysteinm/data/main/gdp.csv"  
+  gdp = pd.read_csv(url)  
+  gdp.head(10)  
+
+### Julia
+
+  using CSV, DataFrames  
+  url = "https://raw.githubusercontent.com/oysteinm/data/main/gdp.csv"  
+  gdp = DataFrame(CSV.File(download(url)))  
+  first(gdp, 10)  
+
 
 `oil.csv`
 
