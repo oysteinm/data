@@ -9,6 +9,30 @@ More info on each data set in it's respective `.R` file.
 
 Realised net government cash flow from petroleum activities, 1971-2021. Paid taxes are adjusted for repayments, and the numbers are in constant 2022-prices. Billion NOK (2022).
 
+Read the csv data from github:
+
+### R
+
+  library(tidyverse)  
+  url <- "https://raw.githubusercontent.com/oysteinm/data/main/cash_flow.csv"  
+  cash_flow <- read_csv(url)  
+  head(cash_flow, 10)  
+
+### Python
+
+  import pandas as pd  
+  url = "https://raw.githubusercontent.com/oysteinm/data/main/cash_flow.csv"  
+  cash_flow = pd.read_csv(url)  
+  cash_flow.head(10)  
+
+### Julia
+
+  using CSV, DataFrames  
+  url = "https://raw.githubusercontent.com/oysteinm/data/main/cash_flow.csv"  
+  cash_flow = DataFrame(CSV.File(download(url)))  
+  first(cash_flow, 10)  
+
+
 # `gdp.csv`
 
 GDP per capita, 1970-2018 (purchasing power corrected, USA = 100)
