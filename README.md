@@ -32,6 +32,33 @@ Read the csv data from github:
   gdp = DataFrame(CSV.File(download(url)))  
   first(gdp, 10)  
 
+# `gdp_share.csv`
+
+Macroeconomic indicators for the oil industry, 1971-2020. 
+
+Read the csv data from github:
+
+### R
+
+  library(tidyverse)  
+  url <- "https://raw.githubusercontent.com/oysteinm/data/main/gdp_share.csv"  
+  gdp_share <- read_csv(url)  
+  head(gdp_share, 10)  
+
+### Python
+
+  import pandas as pd  
+  url = "https://raw.githubusercontent.com/oysteinm/data/main/gdp_share.csv"  
+  gdp_share = pd.read_csv(url)  
+  gdp_share.head(10)  
+
+### Julia
+
+  using CSV, DataFrames  
+  url = "https://raw.githubusercontent.com/oysteinm/data/main/gdp_share.csv"  
+  gdp_share = DataFrame(CSV.File(download(url)))  
+  first(gdp_share, 10)  
+
 # `oil.csv`
 
 Data on Norwegian oil and gas production.
