@@ -19,22 +19,21 @@ Read the csv data from github:
 ### R
 
   library(tidyverse)  
-  url <- 'https://raw.githubusercontent.com/oysteinm/data/main/oil.csv'  
+  url <- "https://raw.githubusercontent.com/oysteinm/data/main/oil.csv"  
   oil <- read_csv(url)  
-  oil %>%   
-  head(10)  
+  head(oil, 10)  
 
 
 ### Python
 
   import pandas as pd  
-  oil = pd.read_csv('https://raw.githubusercontent.com/oysteinm/data/main/oil.csv')  
+  url = "https://raw.githubusercontent.com/oysteinm/data/main/oil.csv"  
+  oil = pd.read_csv(url)  
   oil.head(10)  
 
 ### Julia
 
-  using CSV, Downloads  
+  using CSV, DataFrames  
   url = "https://raw.githubusercontent.com/oysteinm/data/main/oil.csv"  
-  http_response = Downloads.download(url)  
-  oil = CSV.File(http_response)  
+  oil = DataFrames.DataFrame(CSV.File(DataFrames.download(url)))
   first(oil, 10)  
