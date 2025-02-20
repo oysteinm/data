@@ -14,21 +14,21 @@ Read the csv data from github:
 ### R
 
   library(tidyverse)  
-  url <- "https://raw.githubusercontent.com/oysteinm/data/main/cash_flow.csv"  
+  url <- "https://github.com/oysteinm/data/blob/main/cash_flow.csv"  
   cash_flow <- read_csv(url)  
   head(cash_flow, 10)  
 
 ### Python
 
   import pandas as pd  
-  url = "https://raw.githubusercontent.com/oysteinm/data/main/cash_flow.csv"  
+  url = "https://github.com/oysteinm/data/blob/main/cash_flow.csv"  
   cash_flow = pd.read_csv(url)  
   cash_flow.head(10)  
 
 ### Julia
 
   using CSV, DataFrames  
-  url = "https://raw.githubusercontent.com/oysteinm/data/main/cash_flow.csv"  
+  url = "https://github.com/oysteinm/data/blob/main/cash_flow.csv"  
   cash_flow = DataFrame(CSV.File(download(url)))  
   first(cash_flow, 10)  
 
@@ -42,21 +42,21 @@ Read the csv data from github:
 ### R
 
   library(tidyverse)  
-  url <- "https://raw.githubusercontent.com/oysteinm/data/main/gdp.csv"  
+  url <- "https://github.com/oysteinm/data/blob/main/gdp.csv"  
   gdp <- read_csv(url)  
   head(gdp, 10)  
 
 ### Python
 
   import pandas as pd  
-  url = "https://raw.githubusercontent.com/oysteinm/data/main/gdp.csv"  
+  url = "https://github.com/oysteinm/data/blob/main/gdp.csv"  
   gdp = pd.read_csv(url)  
   gdp.head(10)  
 
 ### Julia
 
   using CSV, DataFrames  
-  url = "https://raw.githubusercontent.com/oysteinm/data/main/gdp.csv"  
+  url = "https://github.com/oysteinm/data/blob/main/gdp.csv"  
   gdp = DataFrame(CSV.File(download(url)))  
   first(gdp, 10)  
 
@@ -69,21 +69,21 @@ Read the csv data from github:
 ### R
 
   library(tidyverse)  
-  url <- "https://raw.githubusercontent.com/oysteinm/data/main/gdp_share.csv"  
+  url <- "https://github.com/oysteinm/data/blob/main/gdp_share.csv"  
   gdp_share <- read_csv(url)  
   head(gdp_share, 10)  
 
 ### Python
 
   import pandas as pd  
-  url = "https://raw.githubusercontent.com/oysteinm/data/main/gdp_share.csv"  
+  url = "https://github.com/oysteinm/data/blob/main/gdp_share.csv"  
   gdp_share = pd.read_csv(url)  
   gdp_share.head(10)  
 
 ### Julia
 
   using CSV, DataFrames  
-  url = "https://raw.githubusercontent.com/oysteinm/data/main/gdp_share.csv"  
+  url = "https://github.com/oysteinm/data/blob/main/gdp_share.csv"  
   gdp_share = DataFrame(CSV.File(download(url)))  
   first(gdp_share, 10)  
 
@@ -101,21 +101,21 @@ Read the csv data from github:
 ### R
 
   library(tidyverse)  
-  url <- "https://raw.githubusercontent.com/oysteinm/data/main/oil.csv"  
+  url <- "https://github.com/oysteinm/data/blob/main/oil.csv"  
   oil <- read_csv(url)  
   head(oil, 10)  
 
 ### Python
 
   import pandas as pd  
-  url = "https://raw.githubusercontent.com/oysteinm/data/main/oil.csv"  
+  url = "https://github.com/oysteinm/data/blob/main/oil.csv"  
   oil = pd.read_csv(url)  
   oil.head(10)  
 
 ### Julia
 
   using CSV, DataFrames  
-  url = "https://raw.githubusercontent.com/oysteinm/data/main/oil.csv"  
+  url = "https://github.com/oysteinm/data/blob/main/oil.csv"  
   oil = DataFrame(CSV.File(download(url)))  
   first(oil, 10)  
 
@@ -130,21 +130,21 @@ Read the csv data from github:
 ### R
 
   library(tidyverse)  
-  url <- "https://raw.githubusercontent.com/oysteinm/data/main/oil_price.csv"  
+  url <- "https://github.com/oysteinm/data/blob/main/oil_price.csv"  
   oil_price <- read_csv(url)  
   head(oil_price, 10)  
 
 ### Python
 
   import pandas as pd  
-  url = "https://raw.githubusercontent.com/oysteinm/data/main/oil_price.csv"  
+  url = "https://github.com/oysteinm/data/blob/main/oil_price.csv"  
   oil_price = pd.read_csv(url)  
   oil_price.head(10)  
 
 ### Julia
 
   using CSV, DataFrames  
-  url = "https://raw.githubusercontent.com/oysteinm/data/main/oil_price.csv"  
+  url = "https://github.com/oysteinm/data/blob/main/oil_price.csv"  
   oil_price = DataFrame(CSV.File(download(url)))  
   first(oil_price, 10)  
 
